@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4bb4e6"/>
+      <stop offset="1" stop-color="#008acc"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_169" data-name="Grupo 169" transform="translate(-412.767 -384.02)">
+    <circle id="Elipse_11" data-name="Elipse 11" cx="35.5" cy="35.5" r="35.5" transform="translate(412.767 384.02)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_62" data-name="Grupo 62" transform="translate(424.767 396.02)">
+      <g id="Grupo_61" data-name="Grupo 61">
+        <path id="Trazado_44" data-name="Trazado 44" d="M43.667,21.9A20.478,20.478,0,0,0,24.629,2.864V0H21.9V2.864A20.478,20.478,0,0,0,2.864,21.9H0v2.726H2.864A20.478,20.478,0,0,0,21.9,43.667v2.864h2.726V43.667A20.478,20.478,0,0,0,43.667,24.629h2.864V21.9ZM21.9,5.6v5.477A12.292,12.292,0,0,0,11.073,21.9H5.6A17.751,17.751,0,0,1,21.9,5.6Zm0,35.34A17.751,17.751,0,0,1,5.6,24.629h5.477A12.292,12.292,0,0,0,21.9,35.458Zm0-10.854V32.71a9.563,9.563,0,0,1-8.082-8.082H16.45V21.9H13.821A9.564,9.564,0,0,1,21.9,13.821V16.45h2.726V13.821A9.563,9.563,0,0,1,32.71,21.9H30.082v2.726H32.71a9.563,9.563,0,0,1-8.082,8.082V30.082Zm2.726,10.854V35.458a12.292,12.292,0,0,0,10.83-10.83h5.477A17.751,17.751,0,0,1,24.629,40.936ZM35.458,21.9a12.292,12.292,0,0,0-10.83-10.83V5.6A17.751,17.751,0,0,1,40.936,21.9Z" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Grupo_64" data-name="Grupo 64" transform="translate(443.942 415.196)">
+      <g id="Grupo_63" data-name="Grupo 63">
+        <path id="Trazado_45" data-name="Trazado 45" d="M215.09,211a4.09,4.09,0,1,0,4.09,4.09A4.094,4.094,0,0,0,215.09,211Z" transform="translate(-211 -211)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

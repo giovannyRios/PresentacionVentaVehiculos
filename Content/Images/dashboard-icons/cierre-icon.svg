@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4bb4e6"/>
+      <stop offset="1" stop-color="#008acc"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_170" data-name="Grupo 170" transform="translate(-581 -384.02)">
+    <circle id="Elipse_11" data-name="Elipse 11" cx="35.5" cy="35.5" r="35.5" transform="translate(581 384.02)" fill="url(#linear-gradient)"/>
+    <g id="_007-calculator" data-name="007-calculator" transform="translate(598.252 401.272)">
+      <path id="Trazado_46" data-name="Trazado 46" d="M0,17.258H17.258V0H0ZM4.931,7.4H7.4V4.931a1.233,1.233,0,0,1,2.465,0V7.4h2.465a1.233,1.233,0,0,1,0,2.465H9.862v2.465a1.233,1.233,0,0,1-2.465,0V9.862H4.931a1.233,1.233,0,0,1,0-2.465Z" fill="#fff"/>
+      <path id="Trazado_47" data-name="Trazado 47" d="M30,0V17.258H47.258V0ZM42.327,9.862h-7.4a1.233,1.233,0,1,1,0-2.465h7.4a1.233,1.233,0,0,1,0,2.465Z" transform="translate(-11.51)" fill="#fff"/>
+      <path id="Trazado_48" data-name="Trazado 48" d="M30,47.258H47.258V30H30Zm4.931-11.711h7.4a1.233,1.233,0,0,1,0,2.465h-7.4a1.233,1.233,0,1,1,0-2.465Zm0,3.7h7.4a1.233,1.233,0,1,1,0,2.465h-7.4a1.233,1.233,0,1,1,0-2.465Z" transform="translate(-11.51 -11.51)" fill="#fff"/>
+      <path id="Trazado_49" data-name="Trazado 49" d="M0,47.258H17.258V30H0ZM4.676,36.419a1.233,1.233,0,1,1,1.743-1.743l2.21,2.21,2.21-2.21a1.233,1.233,0,1,1,1.743,1.743l-2.21,2.21,2.21,2.21a1.233,1.233,0,1,1-1.743,1.743l-2.21-2.21-2.21,2.21a1.233,1.233,0,0,1-1.743-1.743l2.21-2.21Z" transform="translate(0 -11.51)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/bootstrap2.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/jquery.fancybox.min.css">
+    <title>@ViewBag.Title - REGISTRO Y ALQUILER DE VEHICULOS</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @if (Request.IsAuthenticated)
+    {
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Registro y alquiler de vehiculos", "Login", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @*<li>@Html.ActionLink("Inicio", "Index", "Home")</li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Registro y alquiler de vehiculos</p>
+            </footer>
+        </div>
+    }
+    else
+    {
+        <div class="fixed-top">
+            <div id="login">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="row center-login">
+                            <div class="col-md-8 col-lg-6">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/chosen")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/c3")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/Scripts/scripts.js")
+    @Scripts.Render("~/Scripts/jquery.fancybox.min.js")
+    @Scripts.Render("~/bundles/bootstrapSelect")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/bootstrapSelect")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

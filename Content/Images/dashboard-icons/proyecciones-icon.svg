@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#a5a5a5"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_174" data-name="Grupo 174" transform="translate(-498.851 -608.02)">
+    <circle id="Elipse_21" data-name="Elipse 21" cx="35.5" cy="35.5" r="35.5" transform="translate(498.851 608.02)" fill="url(#linear-gradient)"/>
+    <g id="_009-calendar" data-name="009-calendar" transform="translate(516.779 624.948)">
+      <rect id="Rectángulo_37" data-name="Rectángulo 37" width="4.425" height="4.425" transform="translate(12.644 27.185)" fill="#fff"/>
+      <rect id="Rectángulo_38" data-name="Rectángulo 38" width="4.425" height="4.425" transform="translate(12.644 15.805)" fill="#fff"/>
+      <rect id="Rectángulo_39" data-name="Rectángulo 39" width="4.425" height="4.425" transform="translate(12.644 21.495)" fill="#fff"/>
+      <rect id="Rectángulo_40" data-name="Rectángulo 40" width="4.425" height="4.425" transform="translate(6.954 21.495)" fill="#fff"/>
+      <rect id="Rectángulo_41" data-name="Rectángulo 41" width="4.425" height="4.425" transform="translate(6.954 15.805)" fill="#fff"/>
+      <rect id="Rectángulo_42" data-name="Rectángulo 42" width="4.425" height="4.425" transform="translate(6.954 27.185)" fill="#fff"/>
+      <rect id="Rectángulo_43" data-name="Rectángulo 43" width="4.425" height="4.425" transform="translate(24.024 15.805)" fill="#fff"/>
+      <path id="Trazado_57" data-name="Trazado 57" d="M36.771,2.529H32.346V.632A.632.632,0,0,0,31.713,0H27.288a.632.632,0,0,0-.632.632v1.9H12.747V.632A.632.632,0,0,0,12.115,0H7.69a.632.632,0,0,0-.632.632v1.9H2.632A.632.632,0,0,0,2,3.161V37.3a.632.632,0,0,0,.632.632H36.771A.632.632,0,0,0,37.4,37.3V3.161A.632.632,0,0,0,36.771,2.529Zm-5.058,17.7V32.874H7.69V14.541H31.713ZM36.139,9.483H3.264V3.793H7.058v1.9a.632.632,0,0,0,.632.632h4.425a.632.632,0,0,0,.632-.632v-1.9H26.656v1.9a.632.632,0,0,0,.632.632h4.425a.632.632,0,0,0,.632-.632v-1.9h3.793Z" transform="translate(-2)" fill="#fff"/>
+      <rect id="Rectángulo_44" data-name="Rectángulo 44" width="4.425" height="4.425" transform="translate(24.024 21.495)" fill="#fff"/>
+      <rect id="Rectángulo_45" data-name="Rectángulo 45" width="4.425" height="4.425" transform="translate(24.024 27.185)" fill="#fff"/>
+      <rect id="Rectángulo_46" data-name="Rectángulo 46" width="4.425" height="4.425" transform="translate(18.334 27.185)" fill="#fff"/>
+      <rect id="Rectángulo_47" data-name="Rectángulo 47" width="4.425" height="4.425" transform="translate(18.334 21.495)" fill="#fff"/>
+      <rect id="Rectángulo_48" data-name="Rectángulo 48" width="4.425" height="4.425" transform="translate(18.334 15.805)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
