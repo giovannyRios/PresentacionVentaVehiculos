@@ -60,7 +60,7 @@ namespace WebVentaVehiculos.Controllers
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
 
-        public async Task<ActionResult> Login(dateUsersModels ObjUser)
+        public async Task<ActionResult> Login(dateUsersModels ObjUser, string Url)
         {
             if (!ModelState.IsValid)
             {
@@ -103,7 +103,7 @@ namespace WebVentaVehiculos.Controllers
                                 Session["Token"] = values.First();
                             }
 
-                            return RedirectToLocal();
+                            return RedirectToLocal(Url);
                         }
 
                     default:
@@ -117,8 +117,13 @@ namespace WebVentaVehiculos.Controllers
             }
         }
 
-        private ActionResult RedirectToLocal()
+        private ActionResult RedirectToLocal(string UrlDireccionamiento)
         {
+            if (Url.IsLocalUrl(UrlDireccionamiento))
+            {
+                Redirect(UrlDireccionamiento);
+            }
+
             return RedirectToAction("Index", "Home");
         }
     }
