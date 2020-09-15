@@ -93,7 +93,7 @@ namespace WebVentaVehiculos.Controllers
                         }
                         else
                         {
-                            FormsAuthentication.SetAuthCookie(logueado.First()._UserStr, false);
+                            FormsAuthentication.SetAuthCookie(ObjUser.user, false);
                             Session["USER"] = logueado.First()._UserStr;
                             HttpHeaders headers = response.Headers;
                             IEnumerable<string> values;
