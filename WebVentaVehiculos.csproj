@@ -182,6 +182,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\API_Control.cs" />
     <Compile Include="Classes\serviceUrl.cs" />
+    <Compile Include="Classes\Sessions.cs" />
+    <Compile Include="Controllers\carController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -479,6 +481,8 @@
     <Content Include="Content\Images\icons-side-menu\simulador.svg" />
     <Content Include="Content\Images\Logo.jpg" />
     <Content Include="Content\Images\lupa.ico" />
+    <Content Include="Content\Images\open-menu.png" />
+    <Content Include="Content\Images\open-menu2.png" />
     <Content Include="Content\Images\small-icons\archives.svg" />
     <Content Include="Content\Images\small-icons\arrow-left.svg" />
     <Content Include="Content\Images\small-icons\calendar.svg" />
@@ -505,6 +509,7 @@
     <Content Include="Content\Images\small-icons\simulador-icon.svg" />
     <Content Include="Content\Images\small-icons\trash.svg" />
     <Content Include="Content\jquery.fancybox.min.css" />
+    <Content Include="Content\MenuHamburguesa.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -779,6 +784,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jquerysession.js" />
+    <Content Include="Scripts\MenuHamburguesa.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
@@ -807,7 +813,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -817,6 +822,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper.min.js.map" />
     <Content Include="Scripts\README.md" />
+    <Content Include="Views\car\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

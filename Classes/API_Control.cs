@@ -10,13 +10,13 @@ using System.Web.Mvc;
 using System.Web.Security;
 using System.Threading.Tasks;
 using ventaVehiculosModels.Models;
-
+using System.Configuration;
 
 namespace WebVentaVehiculos.Classes
 {
     public class API_Control
     {
-        string baseUrl = "https://localhost:44365/";
+        string baseUrl = ConfigurationManager.AppSettings["llaveRutaAPI"];
 
         /// <summary>
         /// Metodo de autenticacion que recibe objeto modelo con los datos de autenticacion

@@ -24,7 +24,7 @@ namespace WebVentaVehiculos
                         "~/Scripts/datatables/jquery.datatables.js",
                         "~/Scripts/datatables/datatables.bootstrap.js",
                         "~/Scripts/typeahead.bundle.js",
-
+                        "~/ Scripts/MenuHamburguesa.js",
                         "~/Scripts/toastr.js"
                       ));
 
@@ -58,7 +58,8 @@ namespace WebVentaVehiculos
                       "~/Content/themes/base/jquery-ui.css",
                       "~/Content/site.css",
                       "~/Content/bootstrap-select.css",
-                      "~/Content/bootstrap-select.min.css"));
+                      "~/Content/bootstrap-select.min.css",
+                      "~/Content/MenuHamburguesa.css")) ;
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrapSelect").Include(
                 "~/Scripts/bootstrap-select.js",

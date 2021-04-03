@@ -40,14 +40,11 @@ namespace WebVentaVehiculos.Controllers
             return View();
         }
 
-
         [Authorize]
         public ActionResult Index()
         {
             return View();
         }
-
-
 
         /// <summary>
         /// Metodo que permite la autenticacion
@@ -76,7 +73,7 @@ namespace WebVentaVehiculos.Controllers
                 switch (response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.NoContent:
-                        ModelState.AddModelError("", "El usuario no se encuentra registrado en la aplicación");
+                        ModelState.AddModelError("", "Usuario o contraseña incorrectos");
                         return View(ObjUser);
 
                     case System.Net.HttpStatusCode.Unauthorized:
@@ -94,13 +91,13 @@ namespace WebVentaVehiculos.Controllers
                         else
                         {
                             FormsAuthentication.SetAuthCookie(ObjUser.user, false);
-                            Session["USER"] = logueado.First()._UserStr;
+                            Session[Sessions.user] = logueado.First()._UserStr;
                             HttpHeaders headers = response.Headers;
                             IEnumerable<string> values;
 
                             if (headers.TryGetValues("token", out values))
                             {
-                                Session["Token"] = values.First();
+                                Session[Sessions.token] = values.First();
                             }
 
                             return RedirectToLocal(Url);
