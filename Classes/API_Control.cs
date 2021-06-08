@@ -10,7 +10,10 @@ using System.Web.Mvc;
 using System.Web.Security;
 using System.Threading.Tasks;
 using ventaVehiculosModels.Models;
+using ventaVehiculosModels.Models.Log;
+using ventaVehiculosModels.Models.cifrado;
 using System.Configuration;
+
 
 namespace WebVentaVehiculos.Classes
 {
@@ -32,6 +35,7 @@ namespace WebVentaVehiculos.Classes
                     client.BaseAddress = new Uri(baseUrl);
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    dateUsersModels userCifrado = new dateUsersModels { pass = implementacionCifrado.cifrar(userDate.user, userDate.pass), user = implementacionCifrado.cifrar(userDate.user, userDate.user) };
                     StringContent content = new StringContent(JsonConvert.SerializeObject(userDate), Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await client.PostAsync(serviceUrl.loginService, content);
                     return response;
@@ -39,7 +43,15 @@ namespace WebVentaVehiculos.Classes
             }
             catch (Exception e)
             {
-                //Se debe crear un metodo para registrar en log la excepcion
+                if(userDate != null)
+                {
+                    cunsumirLog.crearRegistroLog(userDate.user, "Ha ocurrido un error en el metodo ApiLogin " + e.ToString());
+                }
+                else
+                {
+                    cunsumirLog.crearRegistroLog("", "Ha ocurrido un error en el metodo ApiLogin " + e.ToString());
+                }
+                
                 throw e;
             }
         }
@@ -67,6 +79,15 @@ namespace WebVentaVehiculos.Classes
             }
             catch (Exception e)
             {
+                if (token != null)
+                {
+                    cunsumirLog.crearRegistroLog(token, "Ha ocurrido un error en el metodo PostRequest " + e.ToString());
+                }
+                else
+                {
+                    cunsumirLog.crearRegistroLog("", "Ha ocurrido un error en el metodo PostRequest " + e.ToString());
+                }
+
                 throw e;
             }
         }
@@ -87,6 +108,14 @@ namespace WebVentaVehiculos.Classes
             }
             catch (Exception e)
             {
+                if (token != null)
+                {
+                    cunsumirLog.crearRegistroLog(token, "Ha ocurrido un error en el metodo GetRequest " + e.ToString());
+                }
+                else
+                {
+                    cunsumirLog.crearRegistroLog("", "Ha ocurrido un error en el metodo GetRequest " + e.ToString());
+                }
                 throw e;
             }
         }
