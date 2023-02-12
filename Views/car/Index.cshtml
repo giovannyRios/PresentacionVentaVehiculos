@@ -1,0 +1,42 @@
+﻿@using ventaVehiculosModels.Models.DTOs;
+@model List<carDTO>
+@{
+    ViewBag.Title = "Index";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container" id="contenedor">
+        <div class="body-content">
+            <h5>Bienvenido @User.Identity.Name</h5>
+            <div style="padding:100px 25px 25px 25px">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <td style="width:40%;">@Html.LabelFor(p => Model[0]._brand)</td>
+                            <td style="width:20%;">@Html.LabelFor(p => Model[0]._people_capacity)</td>
+                            <td style="width:40%;">@Html.LabelFor(p => Model[0]._transmission_type)</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item._brand</td>
+                                <td>@item._people_capacity</td>
+                                <td>@item._transmission_type</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+}
+
+
+
+
+
+
